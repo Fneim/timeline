@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Timeline</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+
+
+    <style>
+      * {
+        margin:0;
+        padding: 0;
+        font-family: sans-serif;
+      }
+
+      header {
+        background: #111;
+        height: 1.7rem;
+        color: #eee;
+      }
+
+      .logo {
+        text-align: center;
+      }
+
+      /* navigation styles */
+
+      nav {
+        height:100%;
+        width: 20%;
+        position: fixed;
+        z-index: 1;
+        top: 5rem;
+        left:0;
+      }
+
+      ul li {
+        padding: 1rem 2rem 0 2rem;
+        font-size: 1.2rem;
+        /* border-bottom: 1px solid #222; */
+      }
+
+      ul li {
+        position:relative;
+      }
+
+      ul li:before {
+        content:''; 
+        width:60px; 
+        height:4px; 
+        background:gray; 
+        position:absolute; 
+        bottom:-4px;
+      }
+
+      li a {
+        text-decoration:none;
+        color: #222;
+      }
+
+      /* main content styles */
+
+      main {
+        margin: 4rem 20% 0 20%;
+      }
+      
+      .flex-container {
+        display: flex;
+        flex-flow: column wrap;
+      }
+
+      .flex-item {
+        padding-bottom: .55rem;
+        margin:1rem 1.75rem 0 1.75rem;
+        border-bottom: .5px solid #ddd;
+      }
+
+      .flex-item h3 {
+        font-family: helvetica;
+      }
+
+      .flex-item p {
+
+      }
+
+      .flex-item span {
+        padding: .25rem;
+      }
+
+      .tags span {
+        font-size: .85rem;
+        color: #666;
+      }
+      
+      .sparks {
+        height: 100%;
+        width: 20%;
+        position: fixed;
+        z-index: 1;
+        top: 5rem;
+        right:0;
+      }
+    </style>
+
+  </head>
+  <body>
+
+    <!-- header contains brand/logo -->
+    <header>
+      <h2 class="logo">Craft</h2>
+    </header>
+
+    <!-- side menu -->
+     <nav>
+       <ul>
+          <li>
+              <a href="/">World</a>
+          </li>
+         <li>
+            <a href="/">Characters</a>
+          </li>
+          <li>
+              <a href="/">Board</a>
+          </li>
+       </ul>
+     </nav>
+
+     <!-- main content -->
+     <main>
+
+      <!-- plot board section -->
+       <section class="flex-container">
+         <div class="flex-item">
+           <h3>Title</h3>
+           <div class="tags"><span>some tags</span></div>
+           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
+           </p>
+           <span class="fas fa-pen"></span>
+           <span class="fas fa-sd-card"></span>
+         </div>
+
+         <div class="flex-item">
+            <h3>Title</h3>
+            <div class="tags"><span>some tags</span></div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
+               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
+               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
+            </p>
+            <span class="fas fa-pen"></span>
+            <span class="fas fa-sd-card"></span>
+          </div>
+
+          <div class="flex-item">
+              <h3>Title</h3>
+              <div class="tags"><span>some tags</span></div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
+                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
+                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
+              </p>
+              <span class="fas fa-pen"></span>
+              <span class="fas fa-sd-card"></span>
+          </div>
+
+          <br />
+          <span>Create New Event</span>
+       </section>
+
+       <!-- sparks section -->
+       <section class="sparks">
+         <div class="">
+            <h3>Sparks</h3>
+         </div>
+       </section>
+     </main>
+
+
+
+  </body>
+</html>
