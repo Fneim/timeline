@@ -56,6 +56,8 @@
   main {
     margin: 4rem 20% 0 20%;
   }
+
+  /* flex container styles */
   
   .flex-container {
     display: flex;
@@ -63,6 +65,8 @@
     height: auto;
   }
   
+  /* flex item styles */
+
   #create-event-button {
     font-size: 1.2rem;
     background: #0d47a1;
@@ -82,12 +86,28 @@
     font-family: helvetica;
     display: inline-block;
   }
-  
+
+  .tags p {
+    font-size: 0.85rem;
+    color: #666;
+  }
+
+  .flex-item textarea {
+      padding:1rem .5rem;;
+      width:100%;
+      background:transparent;
+      border:0;
+      font-size: 1rem;
+  }
+
+  .flex-item textarea:focus {
+      outline: none;
+  }
+
   .flex-item span {
     padding: 0.25rem;
     font-size: 1.2rem;
   }
-
   
   .edit-button {
     color: #1976d2;
@@ -101,7 +121,7 @@
     color: #90caf9;
   }
 
-  .edit-button, .save-button {
+  .edit-button, .save-button, .delete-button {
       font-size: .75rem;
       font-weight:500;
   }
@@ -115,11 +135,16 @@
     border-radius: 10%;
   }
 
-  
-  .tags span {
-    font-size: 0.85rem;
-    color: #666;
+  .delete-button {
+    color: #e53935;
+    float: right;
+    margin-right: 1.5rem;
+    border:1.2px solid #e53935;
+    border-radius: 10%;
+    display:none;
   }
+  
+  /* sparks styles */
   
   .sparks {
     height: 100%;
