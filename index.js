@@ -55,5 +55,10 @@ $(document).ready(function() {
   
   //   delete the event
   const deleteBtn = e => {
-    e.closest('div').remove();
+    var confirmation = prompt("Are you sure you want to delete this event?");
+    if(confirmation === null) {
+        return; //breaks out of function
+    } else {
+        e.closest('div').remove(); //executes function 
+    }
   }
