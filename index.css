@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+  
+  body {
+    background: #eee;
+  }
+  
+  header {
+    background: #0d47a1;
+    padding: 0.75rem 0;
+    color: #eee;
+  }
+  
+  .logo {
+    text-align: center;
+  }
+  
+  /* navigation styles */
+  nav {
+    height: 100%;
+    width: 20%;
+    position: fixed;
+    z-index: 1;
+    top: 5rem;
+    left: 0;
+  }
+  
+  ul li {
+    padding: 1rem 2rem 0 2rem;
+    font-size: 1.2rem;
+    /* border-bottom: 1px solid #222; */
+  }
+  
+  ul li {
+    position: relative;
+  }
+  
+  ul li:before {
+    content: "";
+    width: 60px;
+    height: 4px;
+    background: gray;
+    position: absolute;
+    bottom: -4px;
+  }
+  
+  li a {
+    text-decoration: none;
+    color: #222;
+  }
+  
+  /* main content styles */
+  main {
+    margin: 4rem 20% 0 20%;
+  }
+  
+  .flex-container {
+    display: flex;
+    flex-flow: column wrap;
+    height: auto;
+  }
+  
+  #create-event-button {
+    font-size: 1.2rem;
+    background: #0d47a1;
+    color: #eee;
+    padding: 0.75rem;
+    border: none;
+    margin-left: 1.75rem;
+  }
+  
+  .flex-item {
+    padding-bottom: 0.55rem;
+    margin: 1rem 1.75rem 0 1.75rem;
+    border-bottom: 0.5px solid #bbb;
+  }
+  
+  .flex-item h3 {
+    font-family: helvetica;
+    display: inline-block;
+  }
+  
+  .flex-item span {
+    padding: 0.25rem;
+    font-size: 1.2rem;
+  }
+
+  
+  .edit-button {
+    color: #1976d2;
+    float: right;
+    margin-right: 1.5rem;
+    border:1.2px solid #1976d2;
+    border-radius: 10%;
+  }
+  
+  .edit-button:hover {
+    color: #90caf9;
+  }
+
+  .edit-button, .save-button {
+      font-size: .75rem;
+      font-weight:500;
+  }
+  
+  .save-button {
+    color: grey;
+    float: right;
+    margin-right: 1.5rem;
+    display: none;
+    border: 1.2px solid grey;
+    border-radius: 10%;
+  }
+
+  
+  .tags span {
+    font-size: 0.85rem;
+    color: #666;
+  }
+  
+  .sparks {
+    height: 100%;
+    width: 20%;
+    position: fixed;
+    z-index: 1;
+    top: 5rem;
+    right: 0;
+  }
+  
