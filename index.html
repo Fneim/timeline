@@ -1,66 +1,99 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>Craft</title>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    />
+    <link rel="stylesheet" type="text/css" href="index.css" />
+  </head>
 
-<head>
-	<title>Craft</title>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<!-- Font Awesome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-  <link rel="stylesheet" type="text/css" href="index.css" />
-</head>
-
-<body>
-	<!-- header contains brand/logo -->
+  <body>
+    <!-- header contains brand/logo -->
     <header>
-      <h2 class="logo">Craft</h2>
+      <h2 id="logo">Craft</h2>
     </header>
 
     <!-- side menu -->
-     <nav>
-       <ul>
-          <li>
-              <a href="/">World</a>
-          </li>
-         <li>
-            <a href="/">Characters</a>
-          </li>
-          <li>
-              <a href="/">Board</a>
-          </li>
-       </ul>
-     </nav>
+    <nav>
+      <ul>
+        <li>
+          <a href="/">World</a>
+        </li>
+        <li>
+          <a href="/">Characters</a>
+        </li>
+        <li>
+          <a href="/">Board</a>
+        </li>
+      </ul>
+    </nav>
 
-     <!-- main content -->
-     <main>
-
+    <!-- main content -->
+    <main>
       <!-- plot board section -->
-      <button id="create-event-button">Create New Event</button>
-       <section class="flex-container">
-         <div class="flex-item">
-           <form>
-              <input type="text" placeholder="title" required>
+      <div class="plot-board">
+        <div id="world-selector">
+          <select>
+            <option>Harry Potter Universe</option>
+            <option>Star Wars Universe</option>
+            <option>Lord of the Rings Universe</option>
+          </select>
+        </div>
+
+        <button id="create-event-button">
+          Create New <span class="fas fa-plus"></span>
+        </button>
+        <section class="flex-container plot-container">
+          <div class="flex-item">
+            <form>
+              <input type="text" placeholder="Title" required />
               <span class="save-button" onclick="save(this)">Save</span>
               <div class="tags"><p>some tags</p></div>
-              <textarea type="text" placeholder="Write here...so what happened next?"></textarea>
+              <textarea
+                type="text"
+                placeholder="Write here...so what happened next?"
+              ></textarea>
               <span class="edit-button" onclick="edit(this)">Edit</span>
-              <span class="delete-button" onclick="deleteBtn(this)">Delete</span>
-           </form>
-         </div>
+              <span class="delete-button" onclick="deleteBtn(this)"
+                >Delete</span
+              >
+            </form>
+          </div>
+        </section>
+      </div>
 
-       </section>
+      <!-- sparks section -->
+      <section class="sparks">
+        <h3>Sparks</h3>
+        <div class="flex-container sparks-container">
+          <!-- to link and contain characters involved in each plot -->
+          <div id="characters-container"> 
+            <div>
+              <!-- append characters to here -->
+            </div>
+            <label for="link-characters">Link Characters: </label>
+            <select id="link-characters" onchange="linkCharacter(this)">
+              <option>Jules</option>
+              <option>Marls</option>
+              <option>Kieran</option>
+              <option>Arthur</option>
+            </select>
+          </div>
+          
+        </div>
+      </section>
+    </main>
 
-       <!-- sparks section -->
-       <section class="sparks">
-         <div class="">
-            <h3>Sparks</h3>
-         </div>
-       </section>
-     </main>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<script src="index.js">
-	</script>
-</body>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+    <script src="sparks.js"></script>
+  </body>
 </html>
