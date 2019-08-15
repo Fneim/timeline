@@ -217,10 +217,16 @@ li a {
   border: none;
 }
 
-#character-container select:focus {
+#characters-container select:focus {
   outline: none;
 }
 
+#characters-container div span {
+  display: inline-block;
+  margin-right: .55rem;
+  font-size: .75rem;
+  padding: .3rem;
+}
 
 /* overlay styles */
 #overlay {
